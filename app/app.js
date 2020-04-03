@@ -63,14 +63,14 @@ pushButton.watch(async function (err, value) { //Watch for hardware interrupts o
   var status;
   if (value == 1) {
     LED.write(0);
-    status = "Closed"
+    status = "Closed - o"
   } else
   {
     LED.write(1);
-    status = "Opened"
+    status = "Opened - o"
   }
   writeToDynamoDB(status);
-  // sendMessage(status);
+  sendMessage(status);
 
 });
 
