@@ -43,10 +43,10 @@ async function fMain() {
     var status;
     if (ButtonStatus == 0) {
       LED.write(1);
-      status = "Open-o!"
+      status = "Open-oo!"
     } else {
       LED.write(0);
-      status = "Closed-o!"
+      status = "Closed-oo!"
     }
       writeToDynamoDB(status);
       // sendMessage(status);
